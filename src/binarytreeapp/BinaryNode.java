@@ -10,6 +10,31 @@ package binarytreeapp;
  * @author Van Do
  */
 
-public class BinaryNode {
-    
+public class BinaryNode 
+{
+    // The employee's key identification
+    private int keyID;
+    // This node's employee records
+    private Employee data;
+    // Child nodes are represent the responsibility of of parent node
+    // Left child node of this node (lower rank of this node)
+    private BinaryNode left;
+    // Right child node of this node (lower rank of this node)
+    private BinaryNode right;
+    // Null constructor
+    public BinaryNode()
+    {
+        keyID = 0;
+        data = null;
+        left = null;
+        right = null;
+    }
+    // Parameterised constructor for adding data to node
+    public BinaryNode(int key, Employee employee)
+    {
+        keyID = key;
+        data = employee;
+        left = null;
+        right = null;
+    }
 }
