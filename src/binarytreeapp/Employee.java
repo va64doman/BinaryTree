@@ -19,8 +19,8 @@ public class Employee {
     private String email;
     // Employee's gender
     private String gender;
-    // Employee's date of birth
-    private String date;
+    // Employee's age
+    private int age;
     // Employee's rank of employee, such as Boss, Manager, Assistant
     private String rank;
     // Null constructor
@@ -29,16 +29,16 @@ public class Employee {
         name = null;
         email = null;
         gender = null;
-        date = null;
+        age = 0;
         rank = null;
     }
     // Parameterised constructor to add details to employee's node
-    public Employee(String eName, String eEmail, int eGender, String eDate, String eRank)
+    public Employee(String eName, String eEmail, String eGender, int eAge, String eRank)
     {
         name = eName;
         email = eEmail;
-        setGender(eGender);
-        date = eDate;
+        gender = eGender;
+        age = eAge;
         rank = eRank;
     }
     // Getters
@@ -57,10 +57,10 @@ public class Employee {
     {
         return gender;
     }
-    // Return employee's date of birth
-    public String getDate()
+    // Return employee's age
+    public int getAge()
     {
-        return date;
+        return age;
     }
     // Return employee's rank of employment
     public String getRank()
@@ -79,28 +79,14 @@ public class Employee {
         email = eEmail;
     }
     // Set employee's gender for changing details legally or change position
-    public final void setGender(int eGender)
+    public void setGender(String eGender)
     {
-        switch(eGender)
-        {
-            case 1:
-                gender = "Male";
-                break;
-            case 2:
-                gender = "Female";
-                break;
-            case 3:
-                gender = "Unisex";
-                break;
-            default:
-                gender = "Unknown";
-                break;
-        }
+        gender = eGender;
     }
-    // Set new date of birth for changing details legally
-    public void setDate(String eDate)
+    // Set new age for changing details legally or progressively
+    public void setAge(int eAge)
     {
-        date = eDate;
+        age = eAge;
     }
     // Set new rank if promote or demote
     public void setRank(String eRank)

@@ -37,4 +37,46 @@ public class BinaryNode
         left = null;
         right = null;
     }
+    // Getters
+    // Return binary node's key
+    public int getKey()
+    {
+        return keyID;
+    }
+    // Return employee's object
+    public Employee getEmployee()
+    {
+        return data;
+    }
+    // Return left child node
+    public BinaryNode getLeft()
+    {
+        return left;
+    }
+    // Return right child node
+    public BinaryNode getRight()
+    {
+        return right;
+    }
+    // Setters
+    // Set new key
+    public void setKey(int key)
+    {
+        keyID = key;
+    }
+    // Set new employee's details
+    public void setEmployee(Employee employee)
+    {
+        data = employee;
+    }
+    // Set new left child
+    public void setLeft(BinaryNode leftChild)
+    {
+        left = leftChild;
+    }
+    // Set new right child
+    public void setRight(BinaryNode rightChild)
+    {
+        right = rightChild;
+    }
 }
