@@ -16,29 +16,24 @@ public class BinaryTree {
     // The number of nodes in binary tree
     private int noOfNodes;
     // Null constructor
-    public BinaryTree()
-    {
+    public BinaryTree(){
         root = null;
         noOfNodes = 0;
     }
     // Check if tree is empty
-    public boolean isEmpty()
-    {
+    public boolean isEmpty(){
         return root == null;
     }
     // Return root of binary tree
-    public BinaryNode getRoot()
-    {
+    public BinaryNode getRoot(){
         return root;
     }
     // Return number of nodes
-    public int count()
-    {
+    public int count(){
         return noOfNodes;
     }
     // Return replacing node
-    public BinaryNode getReplacementNode(BinaryNode replacing)
-    {
+    public BinaryNode getReplacementNode(BinaryNode replacing){
         // The replacement parent node, replacement node and current node
         BinaryNode replaceParent, replace, current;
         // Both replaceParent and replace are the parameter from this method
@@ -69,8 +64,7 @@ public class BinaryTree {
         return replace;
     }
     // Insert employee's data and key id to node
-    public void insert(int key, Employee data)
-    {
+    public void insert(int key, Employee data){
         // Temporarily node is the new node
         // Current node is the comparing node
         // Parent node is the node to check if greater or less than by key
@@ -117,8 +111,7 @@ public class BinaryTree {
         }        
     }
     // Delete node
-    public boolean delete(int key)
-    {
+    public boolean delete(int key){
         // Current node is the comparing node
         // Parent node is the node to check if greater or less than by key
         BinaryNode current, parent;
@@ -214,6 +207,5 @@ public class BinaryTree {
         noOfNodes--;
         // Return true
         return true;
-        
     }
 }

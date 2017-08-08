@@ -24,8 +24,7 @@ public class Employee {
     // Employee's rank of employee, such as Boss, Manager, Assistant
     private String rank;
     // Null constructor
-    public Employee()
-    {
+    public Employee(){
         name = null;
         email = null;
         gender = null;
@@ -33,8 +32,7 @@ public class Employee {
         rank = null;
     }
     // Parameterised constructor to add details to employee's node
-    public Employee(String eName, String eEmail, String eGender, int eAge, String eRank)
-    {
+    public Employee(String eName, String eEmail, String eGender, int eAge, String eRank){
         name = eName;
         email = eEmail;
         gender = eGender;
@@ -43,54 +41,44 @@ public class Employee {
     }
     // Getters
     // Return employee's name
-    public String getName()
-    {
+    public String getName(){
         return name;
     }
     // Return employee's email
-    public String getEmail()
-    {
+    public String getEmail(){
         return email;
     }
     // Return employee's gender
-    public String getGender()
-    {
+    public String getGender(){
         return gender;
     }
     // Return employee's age
-    public int getAge()
-    {
+    public int getAge(){
         return age;
     }
     // Return employee's rank of employment
-    public String getRank()
-    {
+    public String getRank(){
         return rank;
     }
     // Setters
     // Set new name from this employee if changed lawfully or change position
-    public void setName(String eName)
-    {
+    public void setName(String eName){
         name = eName;
     }
     // Set new email if employee's change default email or change position
-    public void setEmail(String eEmail)
-    {
+    public void setEmail(String eEmail){
         email = eEmail;
     }
     // Set employee's gender for changing details legally or change position
-    public void setGender(String eGender)
-    {
+    public void setGender(String eGender){
         gender = eGender;
     }
     // Set new age for changing details legally or progressively
-    public void setAge(int eAge)
-    {
+    public void setAge(int eAge){
         age = eAge;
     }
     // Set new rank if promote or demote
-    public void setRank(String eRank)
-    {
+    public void setRank(String eRank){
         rank = eRank;
     }
 }

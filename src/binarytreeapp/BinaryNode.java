@@ -21,16 +21,14 @@ public class BinaryNode {
     // Right child node of this node (lower rank of this node)
     private BinaryNode right;
     // Null constructor
-    public BinaryNode()
-    {
+    public BinaryNode(){
         keyID = 0;
         data = null;
         left = null;
         right = null;
     }
     // Parameterised constructor for adding data to node
-    public BinaryNode(int key, Employee employee)
-    {
+    public BinaryNode(int key, Employee employee){
         keyID = key;
         data = employee;
         left = null;
@@ -38,44 +36,36 @@ public class BinaryNode {
     }
     // Getters
     // Return binary node's key
-    public int getKey()
-    {
+    public int getKey(){
         return keyID;
     }
     // Return employee's object
-    public Employee getEmployee()
-    {
+    public Employee getEmployee(){
         return data;
     }
     // Return left child node
-    public BinaryNode getLeft()
-    {
+    public BinaryNode getLeft(){
         return left;
     }
     // Return right child node
-    public BinaryNode getRight()
-    {
+    public BinaryNode getRight(){
         return right;
     }
     // Setters
     // Set new key
-    public void setKey(int key)
-    {
+    public void setKey(int key){
         keyID = key;
     }
     // Set new employee's details
-    public void setEmployee(Employee employee)
-    {
+    public void setEmployee(Employee employee){
         data = employee;
     }
     // Set new left child
-    public void setLeft(BinaryNode leftChild)
-    {
+    public void setLeft(BinaryNode leftChild){
         left = leftChild;
     }
     // Set new right child
-    public void setRight(BinaryNode rightChild)
-    {
+    public void setRight(BinaryNode rightChild){
         right = rightChild;
     }
 }
