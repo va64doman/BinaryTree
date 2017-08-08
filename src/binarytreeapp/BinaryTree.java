@@ -10,8 +10,7 @@ package binarytreeapp;
  * @author Van Do
  */
 
-public class BinaryTree 
-{
+public class BinaryTree {
     // The root of the binary tree
     private BinaryNode root;
     // The number of nodes in binary tree

@@ -10,8 +10,7 @@ package binarytreeapp;
  * @author Van Do
  */
 
-public class BinaryNode 
-{
+public class BinaryNode {
     // The employee's key identification
     private int keyID;
     // This node's employee records
