@@ -13,14 +13,13 @@ package binarytreeapp;
 // The main class contains modular programming view and the scenario
 // is storing student details in one class from one course in one campus.
 // This means, assumingly, one course has one class. One class has many students.
-public class BinaryTreeApp {
-
-    /**
-     * @param args the command line arguments
-     */
-    
-    public static void main(String[] args) {
-        
-    }
-    
+public class BinaryTreeApp 
+{
+    public static void main(String[] args) 
+    {
+        // Display the application from Modular class
+        System.out.println("Employee Binary Tree");
+        Modular module = new Modular();
+        module.selectOption();
+    } 
 }
