@@ -13,6 +13,9 @@ package binarytreeapp;
 // The main class contains modular programming view and the scenario
 // is storing student details in one class from one course in one campus.
 // This means, assumingly, one course has one class. One class has many students.
+// The reference is used from the colleagues and internet, however it is not reliable
+// It does not give clear indication of the coding standard and function.
+// Therefore, I would modify this code for the better and ergonomic approach
 public class BinaryTreeApp 
 {
     public static void main(String[] args) 
